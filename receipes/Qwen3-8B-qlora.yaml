@@ -4,7 +4,7 @@ tokenizer_name_or_path: Qwen/Qwen3-8B
 model_revision: main
 torch_dtype: bfloat16
 attn_implementation: flash_attention_2
-use_liger: false
+use_liger: true
 bf16: true
 tf32: true
 output_dir: runs/Qwen3-8B-math-orca-qlora-10k-ep1
@@ -15,6 +15,7 @@ max_seq_length: 1024
 packing: true
 
 # LoRA arguments
+# TODO for qwen3
 use_peft: true
 load_in_4bit: true
 lora_target_modules: "all-linear"

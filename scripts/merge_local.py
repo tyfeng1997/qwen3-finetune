@@ -1,3 +1,4 @@
+#python scripts/merge_local.py
 from peft import PeftModel
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer

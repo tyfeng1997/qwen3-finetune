@@ -1,3 +1,5 @@
+#python scripts/sft.py --config receipes/Qwen3-0.6B-qlora.yaml
+
 from dataclasses import dataclass
 from datetime import datetime
 from distutils.util import strtobool

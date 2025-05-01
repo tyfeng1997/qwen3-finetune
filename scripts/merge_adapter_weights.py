@@ -7,8 +7,7 @@ from transformers import AutoTokenizer, HfArgumentParser
 from huggingface_hub import HfApi
 
 # Example usage:
-# python scripts/merge_adapter_weights.py --peft_model_id falcon-180b-lora-fa --output_dir merged-weights --save_tokenizer True
-
+#python scripts/merge_adapter_weights.py --peft_model_id {{huggineface name }}/Qwen3-0.6B-math-orca-qlora-10k-ep1 --output_dir merged_weights --save_tokenizer True --push_to_hub true
 def save_model(model_path_or_id, save_dir, save_tokenizer=True):
   model = AutoPeftModelForCausalLM.from_pretrained(
       model_path_or_id,

@@ -32,9 +32,9 @@ The script transforms data to the following format:
 ```json
 {
   "messages": [
-    {"role": "system", "content": "system_message"},
-    {"role": "user", "content": "sample['question']"},
-    {"role": "assistant", "content": "sample['answer']"}
+    { "role": "system", "content": "system_message" },
+    { "role": "user", "content": "sample['question']" },
+    { "role": "assistant", "content": "sample['answer']" }
   ]
 }
 ```
@@ -103,12 +103,13 @@ lm_eval --model local-chat-completions \
 
 ## Performance
 
+_There is an error in the way the basic model is evaluated. To avoid misunderstanding, it is deleted first and the problem will be fixed later._
 Our fine-tuned Qwen3-0.6B model achieves:
 
-| Model | GSM8K Accuracy | Improvement |
-|-------|----------------|-------------|
-| Base Qwen3-0.6B | 20.17% | - |
-| Fine-tuned Qwen3-0.6B | 43.06% | +113% |
+| Model                 | GSM8K Accuracy | Improvement |
+| --------------------- | -------------- | ----------- |
+| Base Qwen3-0.6B       | xx.xx%         | -           |
+| Fine-tuned Qwen3-0.6B | 43.06%         |             |
 
 This represents a substantial improvement in mathematical reasoning capabilities while maintaining the small model size.
 
